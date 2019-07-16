@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TradingBotBreeder.iml" filepath="$PROJECT_DIR$/.idea/modules/TradingBotBreeder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TradingBotBreeder-build.iml" filepath="$PROJECT_DIR$/.idea/modules/TradingBotBreeder-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gattakka.iml" filepath="$PROJECT_DIR$/.idea/modules/gattakka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gattakka-build.iml" filepath="$PROJECT_DIR$/.idea/modules/gattakka-build.iml" />
+    </modules>
+  </component>
+</project>
