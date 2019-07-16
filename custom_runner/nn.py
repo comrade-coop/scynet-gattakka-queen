@@ -4,17 +4,9 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
 import numpy as np
 import random
+from keras_parser import run
 
-input_layer = 10
-hidden1 = 5
-
-model = Sequential()
-    
-model.add(Dense(hidden1, input_shape=(input_layer,), activation=tf.nn.sigmoid))
-model.add(Dense(1, activation=tf.nn.sigmoid))
-
-adam = keras.optimizers.Adam(lr=0.001, beta_1=0.9, beta_2=0.999, epsilon=None, decay=0.0, amsgrad=False)
-model.compile(loss='mean_squared_error', optimizer='sgd')
+model = run("../genome.json")
 
 
 x = np.load('data/ready_data/xbnc_n.npy')

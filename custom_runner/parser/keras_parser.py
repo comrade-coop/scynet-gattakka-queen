@@ -2,12 +2,12 @@ import argparse
 import json
 import traceback
 
-import keras
-from keras.layers import *  # we need all layers in the global namespace
-from keras.optimizers import *
-from keras.regularizers import *
-from keras.models import Model
-from keras.utils import plot_model
+import tensorflow.keras
+from tensorflow.keras.layers import *  # we need all layers in the global namespace
+from tensorflow.keras.optimizers import *
+from tensorflow.keras.regularizers import *
+from tensorflow.keras.models import Model
+from tensorflow.keras.utils import plot_model
 from .structure_exception import StructureException
 from ..preprocessor import *
 
