@@ -102,7 +102,9 @@ object Descriptors {
   val InputLayers = repositories.view.flatMap(repository => {
     repository._2.asInstanceOf[Map[Any, Any]].flatMap(source => {
       val source_config = source._2.asInstanceOf[Map[Any, Any]]
-      val shape = source_config("shape").asInstanceOf[Vector[Int]].toList
+      //val shape = source_config("shape").asInstanceOf[Vector[Int]].toList
+      //println("-" * 100 + ">   " + shape)
+      val shape = List() // IS THIS THE DIMENSIONALITY OF THE NN???
       var result = List(
         (0.8, makeInputLayer(source._1 + "Input", shape, MapGeneGroupDescriptor(
           "from" -> EnumGeneDescriptor(List(repository._1.toString)),
@@ -133,6 +135,15 @@ object Descriptors {
   val DenseLayer = makeLayer("Dense", 1, Seq(
     "units" -> UnitsDescriptor, // TODO: Extend
     "use_bias" -> BooleanDescriptor,
+    "activity_regularizer" -> RegularizerDescriptor
+  ) ++
+    makeInitializerRegularizerConstraint("kernel") ++
+    makeInitializerRegularizerConstraint("bias"))
+
+  val DenseOutput1Layer = makeLayer("Dense", 1, Seq(
+    "units" -> LongGeneDescriptor(1, 1), // TODO: Extend
+    "use_bias" -> BooleanDescriptor,
+    "activation" -> EnumGeneDescriptor("sigmoid"),
     "activity_regularizer" -> RegularizerDescriptor
   ) ++
     makeInitializerRegularizerConstraint("kernel") ++
@@ -281,6 +292,9 @@ object Descriptors {
 
   /// Activation Layers
 
+//  val Sigmoid = makeLayer("sigmoid", 1, Seq(
+//  ))
+
   val LeakyReLULayer = makeLayer("LeakyReLU", 1, Seq(
     "alpha" -> DoubleGeneDescriptor(0, 1)
   ))
@@ -315,7 +329,7 @@ object Descriptors {
     ),
     "batch_size" -> EnumGeneDescriptor(List(1)),
     "loss" -> EnumGeneDescriptor(List("mean_squared_error")),
-    "window_length" -> LongGeneDescriptor(1, 5)
+    "window_length" -> LongGeneDescriptor(10, 10) // WHY IS THIS RESPONSIBLE FOR INPUT SHAPE???
   )
 
   /// Configs
@@ -358,5 +372,9 @@ object Descriptors {
   //   ZeroPaddingLayers ++
   //   List()
 
-  val Layers = NonInputLayers ++ InputLayers
+  val OutputLayers = List(
+    (0.0, DenseOutput1Layer) // 0 weight or sometimes layer is missing???
+  )
+
+  val Layers = NonInputLayers ++ InputLayers ++ OutputLayers
 }

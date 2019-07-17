@@ -40,12 +40,15 @@ object Main extends App {
 
     val generateRandomInput = generateRandomChromosome(Descriptors.InputLayers)
     val generateRandomNonInputLayer = generateRandomChromosome(Descriptors.NonInputLayers)
+    val generateRandomOutputLayer = generateRandomChromosome(Descriptors.OutputLayers)
 
     val initialChromosomes = inputGenomes.toList ++ (1 to 20 - inputGenomes.size).map((i: Int) => {
       new Genome(List(
         Descriptors.AdamConfig.createChromosome(),
         generateRandomInput()
-      ) ++ (1 to (Random.nextInt(4) + 1)).map(x => generateRandomNonInputLayer()))
+      ) ++ (1 to (Random.nextInt(4) + 1)).map(x => generateRandomNonInputLayer())
+        ++ List(generateRandomOutputLayer())
+      )
     }).toList
 
 

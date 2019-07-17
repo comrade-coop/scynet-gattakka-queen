@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="481c16ba-1d45-4eea-8c6c-35b227ae8a7c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sbt.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$USER_HOME$/.sbt/1.0/staging/191314dd83e3b87006e7/gattakka/src/main/scala/playground/Program.scala" beforeDir="false" afterPath="$USER_HOME$/.sbt/1.0/staging/191314dd83e3b87006e7/gattakka/src/main/scala/playground/Program.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/obecto/trading_bot_breeder/CustomIndividualActor.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/obecto/trading_bot_breeder/CustomIndividualActor.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/obecto/trading_bot_breeder/Descriptors.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/obecto/trading_bot_breeder/Descriptors.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/obecto/trading_bot_breeder/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/obecto/trading_bot_breeder/Main.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
@@ -39,39 +36,25 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/obecto/trading_bot_breeder/Main.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="7" selection-end-column="22" />
+            <state relative-caret-position="172">
+              <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
               <folding>
                 <element signature="e#40#78#0" expanded="true" />
                 <element signature="e#812#831#0" expanded="true" />
+                <element signature="e#1950#4142#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.sbt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.sbt/1.0/staging/191314dd83e3b87006e7/gattakka/src/main/scala/com/obecto/gattakka/Main.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$USER_HOME$/.sbt/1.0/staging/191314dd83e3b87006e7/gattakka/src/main/scala/playground/Program.scala">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/obecto/trading_bot_breeder/Descriptors.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="9" selection-end-column="112" />
+            <state relative-caret-position="230">
+              <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="141" />
+              <folding>
+                <element signature="e#40#89#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -79,40 +62,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/obecto/trading_bot_breeder/CustomIndividualActor.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1768">
-              <caret line="110" selection-start-line="110" selection-end-line="110" />
+            <state relative-caret-position="-25">
+              <caret line="68" column="8" lean-forward="true" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="8" />
               <folding>
                 <element signature="e#3863#3891#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/obecto/trading_bot_breeder/CustomEvaluator.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/obecto/trading_bot_breeder/Converter.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1547">
-              <caret line="93" column="27" selection-start-line="93" selection-start-column="27" selection-end-line="93" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/obecto/trading_bot_breeder/Descriptors.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="309" selection-start-line="309" selection-end-line="309" />
-              <folding>
-                <element signature="e#40#89#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -126,23 +79,34 @@
       <find>customi</find>
       <find>custo</find>
       <find>custom</find>
+      <find>window_length</find>
+      <find>inputlayer</find>
+      <find>makeInputLayer</find>
+      <find>activation</find>
+      <find>score</find>
+      <find>activationlayers</find>
+      <find>why</find>
+      <find>sigmoid</find>
+      <find>ActivationDescriptor</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$/.sbt/1.0/staging/191314dd83e3b87006e7/gattakka" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/main/scala/com/obecto/trading_bot_breeder/CustomIndividualActor.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/obecto/trading_bot_breeder/Main.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/obecto/trading_bot_breeder/Descriptors.scala" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="1938" />
-    <option name="height" value="1166" />
+    <option name="x" value="-11" />
+    <option name="y" value="-11" />
+    <option name="width" value="1939" />
+    <option name="height" value="1167" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -155,44 +119,6 @@
           <expand>
             <path>
               <item name="generator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gattakka" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="generator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gattakka" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="generator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gattakka" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="generator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gattakka" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="generator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gattakka" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="gattakka" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="generator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="gattakka" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="playground" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="generator" type="b2602c69:ProjectViewProjectNode" />
               <item name="generator" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -212,6 +138,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="generator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="generator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="trading_bot_breeder" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -222,7 +156,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563131796960" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563360427542" />
     <property name="editor.config.ad.shown" value="true" />
   </component>
   <component name="RunDashboard">
@@ -303,10 +237,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1488" height="895" extended-state="6" />
+    <frame x="-7" y="-7" width="1488" height="803" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15524475" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15734266" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -324,7 +258,7 @@
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Build" order="10" visible="true" weight="0.04491018" />
-      <window_info anchor="bottom" id="sbt-shell-toolwindow" order="11" />
+      <window_info anchor="bottom" id="sbt-shell-toolwindow" order="11" visible="true" weight="0.14670658" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -344,13 +278,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/obecto/trading_bot_breeder/CustomIndividualActor.scala">
+    <entry file="file://$USER_HOME$/.sbt/1.0/staging/191314dd83e3b87006e7/gattakka/src/main/scala/com/obecto/gattakka/Main.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1768">
-          <caret line="110" selection-start-line="110" selection-end-line="110" />
-          <folding>
-            <element signature="e#3863#3891#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
@@ -368,52 +299,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.sbt/1.0/staging/191314dd83e3b87006e7/gattakka/src/main/scala/com/obecto/gattakka/genetics/descriptors/LongGene.scala">
+    <entry file="file://$USER_HOME$/.sbt/1.0/staging/191314dd83e3b87006e7/gattakka/src/main/scala/playground/Program.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/obecto/trading_bot_breeder/Descriptors.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="309" selection-start-line="309" selection-end-line="309" />
-          <folding>
-            <element signature="e#40#89#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/obecto/trading_bot_breeder/Main.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="7" selection-end-column="22" />
-          <folding>
-            <element signature="e#40#78#0" expanded="true" />
-            <element signature="e#812#831#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-1220">
+          <caret line="2" selection-start-line="2" selection-end-line="9" selection-end-column="112" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.sbt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.sbt/1.0/staging/191314dd83e3b87006e7/gattakka/src/main/scala/com/obecto/gattakka/Main.scala">
+    <entry file="file://$USER_HOME$/.sbt/1.0/staging/191314dd83e3b87006e7/gattakka/src/main/scala/com/obecto/gattakka/genetics/descriptors/LongGene.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="119">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.sbt/1.0/staging/191314dd83e3b87006e7/gattakka/src/main/scala/playground/Program.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/obecto/trading_bot_breeder/CustomIndividualActor.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="9" selection-end-column="112" />
+        <state relative-caret-position="-25">
+          <caret line="68" column="8" lean-forward="true" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="8" />
+          <folding>
+            <element signature="e#3863#3891#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/obecto/trading_bot_breeder/Main.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+          <folding>
+            <element signature="e#40#78#0" expanded="true" />
+            <element signature="e#812#831#0" expanded="true" />
+            <element signature="e#1950#4142#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/obecto/trading_bot_breeder/Descriptors.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="141" />
+          <folding>
+            <element signature="e#40#89#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

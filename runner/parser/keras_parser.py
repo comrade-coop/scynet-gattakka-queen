@@ -136,7 +136,7 @@ def run(filename):
     data = load_json(filename)
     try:
         model, input_metadata = build_model(data)  # This will raise an exception for invalid config
-        plot_model(model, to_file="model.png")
+        # plot_model(model, to_file="model.png")
 
         # print the metadata for test purposes
         for tup in input_metadata:

@@ -68,8 +68,11 @@ class CustomIndividualActor(genome: Genome) extends Individual(genome) {
         }
       },
       out => {
+        // TODO: Doesn't wait for python to finish
         val resultLines = scala.io.Source.fromInputStream(out).getLines.toList
+        println(resultLines)
         val resultMap = resultLines.view.map({line =>
+          println("PYTHON:" + line)
           val parts = line.split("=", 2)
           if (parts.length == 2) Some((parts(0).trim, parts(1).trim))
           else None
@@ -82,6 +85,7 @@ class CustomIndividualActor(genome: Genome) extends Individual(genome) {
           val score = resultMap.getOrElse("score", "0").toDouble
           val displayScore = resultMap.getOrElse("display_score", "0").toDouble
           val iterations = resultMap.getOrElse("iterations", "-1").toInt
+          println("-" * 50 + "> fitness is: " +  score)
           dispatchFitness(score, displayScore, iterations)
         } else if (!stopping) {
           dispatchFitness(Double.NaN, Double.NaN, -1)
