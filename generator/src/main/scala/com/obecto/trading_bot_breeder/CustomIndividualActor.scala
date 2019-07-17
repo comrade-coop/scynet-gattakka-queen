@@ -35,7 +35,7 @@ class CustomIndividualActor(genome: Genome) extends Individual(genome) {
     if (!fitness.isNaN && fitness != 0.0) {
       val endTime = System.currentTimeMillis / 1000
       val sign = if (displayScore > 0) 1 else 0
-      printToFile(new File(f"../results/$sign${abs(displayScore)}%010.2f-${shortHash}/${abs(displayScore)}%06.2f-${shortHash}.txt")) { p =>
+      printToFile(new File(f"../results/${abs(displayScore)}%06.2f-${shortHash}.txt")) { p =>
         p.println(s"fitness = $fitness")
         p.println(s"score = $displayScore")
         p.println(s"iterations = $iterations")
