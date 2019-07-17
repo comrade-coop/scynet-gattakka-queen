@@ -1,4 +1,5 @@
-# print("score = 0")
+#!/usr/bin/python
+
 import sys
 import numpy as np
 import os
