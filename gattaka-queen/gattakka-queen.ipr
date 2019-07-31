@@ -2,6 +2,8 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="ai.scynet.gattakka-queen.main" target="1.8" />
+      <module name="ai.scynet.gattakka-queen.test" target="1.8" />
       <module name="gattakka-queen.main" target="1.8" />
       <module name="gattakka-queen.test" target="1.8" />
     </bytecodeTargetLevel>
@@ -43,8 +45,13 @@
       </codeStyleSettings>
     </code_scheme>
   </component>
+  <component name="ProjectDictionaryState">
+    <dictionary name="alex4o" />
+  </component>
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ai.scynet.gattakka-queen.main.iml" filepath="$PROJECT_DIR$/ai.scynet.gattakka-queen.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ai.scynet.gattakka-queen.test.iml" filepath="$PROJECT_DIR$/ai.scynet.gattakka-queen.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/gattakka-queen.iml" filepath="$PROJECT_DIR$/gattakka-queen.iml" />
       <module fileurl="file://$PROJECT_DIR$/gattakka-queen.main.iml" filepath="$PROJECT_DIR$/gattakka-queen.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/gattakka-queen.test.iml" filepath="$PROJECT_DIR$/gattakka-queen.test.iml" />
@@ -61,6 +68,9 @@
         <parameter value="-target:jvm-1.8" />
       </parameters>
     </profile>
+  </component>
+  <component name="ScalaSbtSettings">
+    <option name="customVMPath" />
   </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />

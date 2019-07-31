@@ -1,10 +1,13 @@
 plugins {
     id 'org.jetbrains.kotlin.jvm'
     id 'scala'
+    id 'application'
 }
 
 group 'ai.scynet'
-version '1.0'
+version '1.0.0'
+mainClassName = "ai.scynet.queen.AppKt"
+
 
 repositories {
     mavenCentral()
