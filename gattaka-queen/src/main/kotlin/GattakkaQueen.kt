@@ -5,7 +5,6 @@ import akka.actor.ActorSystem
 import com.obecto.gattakka.*
 import org.koin.core.KoinComponent
 
-
 class GattakkaQueen : LifeCycle, KoinComponent {
     val system = ActorSystem.apply("gattakka")
     val helper = GattakaQueenHelper()
@@ -15,7 +14,7 @@ class GattakkaQueen : LifeCycle, KoinComponent {
         val pipelineActor = system.actorOf(Pipeline.props(helper.pipelineOperators()), "pipeline")
         val evaluator = system.actorOf(Evaluator.props(helper.evaluator()), "evaluator")
         val populationActor = system.actorOf(Population.props(
-            helper.individualActor(),
+            CustomReceiverIndividualActor::class.java,
             helper.initialChromosomes(),
             evaluator,
             pipelineActor,
