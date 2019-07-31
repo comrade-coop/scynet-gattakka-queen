@@ -33,16 +33,16 @@ class CustomReceiverIndividualActor(genome: Genome?) : CustomIndividualActor(gen
 
     val tempJobCache = ignite.getOrCreateCache<String, Gene>("Jobs")
 
-    override fun receiveGenome(genome: Genome?, data: Any?): Option<Any> {
-        println(ignite)
-        val gene = genome!!.chromosomes().head().toGene()
-
-        tempJobCache.putAsync("name", gene).toCompletableFuture().get()
-
-        println(gene)
-        return Option.empty()
-        this.dispatchFitness(0.5)
-    }
+//    override fun receiveGenome(genome: Genome?, data: Any?): Option<Any> {
+//        println(ignite)
+//        val gene = genome!!.chromosomes().head().toGene()
+//
+//        tempJobCache.putAsync("name", gene).toCompletableFuture().get()
+//
+//        println(gene)
+//        return Option.empty()
+//        this.dispatchFitness(0.5)
+//    }
 
 
 }

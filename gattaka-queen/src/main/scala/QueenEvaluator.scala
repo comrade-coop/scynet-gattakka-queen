@@ -1,35 +1,45 @@
 package ai.scynet.queen
 
-import com.obecto.gattakka.Evaluator
-import com.obecto.gattakka.messages.eventbus.AddSubscriber
 import com.obecto.gattakka.messages.population.{IntroducePopulation, PipelineFinishedEvent, RefreshPopulation}
+import com.obecto.gattakka.messages.evaluator._
+import com.obecto.gattakka.messages.eventbus.AddSubscriber
+import com.obecto.gattakka.{Evaluator}
+import scala.concurrent.duration._
 
 class QueenEvaluator extends Evaluator {
-  import com.obecto.gattakka.messages.evaluator._
 
-  var populationSize = 0
-  val requiredRatio = 0.9
+  import com.obecto.gattakka.messages.evaluator._
+  import context.dispatcher
+
+  var requiredAmount = 10
+  var refreshed = false
+  var scheduled = false
+  val requiredRatio = 1.0
 
   def tryRefresh() = {
-    if (fitnesses.size >= populationSize * requiredRatio && populationSize > 0) {
-      populationActor ! RefreshPopulation(false)
+    if (!scheduled) {
+      scheduled = true
+      context.system.scheduler.scheduleOnce(1.seconds) {
+        scheduled = false
+        if (fitnesses.size >= requiredAmount && requiredAmount > 0 && !refreshed) {
+          refreshed = true
+          populationActor ! RefreshPopulation(false)
+        }
+      }
     }
   }
 
   override def customReceive = {
-
     case IntroducePopulation =>
-      println("===== IntroducePopulation =====")
       originalReceive(IntroducePopulation)
       populationActor ! AddSubscriber(self, classOf[PipelineFinishedEvent])
 
     case PipelineFinishedEvent(totalSize, newComers) =>
-      println("PipelineFinishedEvent")
-
-      populationSize = totalSize
+      requiredAmount = totalSize - newComers + (newComers * requiredRatio).ceil.toInt
+      refreshed = false
       tryRefresh()
 
-    case x @ (_: SetFitness | _: RemoveFitness) =>
+    case x @ (_: SetFitness) =>
       originalReceive(x)
       tryRefresh()
   }
